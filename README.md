@@ -4,6 +4,8 @@
 
 Currently the authentication is pretty stupid, just make a file named acct.yaml in the same directory as clippy with your username and password. See acct.example.yaml for the mind-bending complexities of this format.
 
+Canonical use-pattern: cmd-ctrl-shift-4, `macruby clippy.rb this is teh awesome screenshot`.
+
 ## TODO
 
 - give any indication of success or failure
