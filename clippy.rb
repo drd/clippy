@@ -78,7 +78,7 @@ pic = File.open('/tmp/twitpic.png')
 query, headers = MultipartPost.new.prepare_query(
   YAML.load(File.read('acct.yaml')).merge(
 	'media' => pic,
-	'message' => ARGV[0]
+	'message' => ARGV.join(' ')
 ))
 
 request = Net::HTTP::Post.new('/api/uploadAndPost', headers)
